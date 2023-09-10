@@ -9,7 +9,7 @@ extern "C" {
 #define EGL_EGLEXT_PROTOTYPES 1
 #include <EGL/eglext.h>
 
-void eglext_loader_load();
+void eglext_load();
 
 #ifdef __cplusplus
 }

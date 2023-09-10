@@ -184,7 +184,7 @@ struct eglext_functions
 
 struct eglext_functions functions;
 
-void eglext_loader_load()
+void eglext_load()
 {
     (void)memset(&functions, 0, sizeof(struct eglext_functions));
 
