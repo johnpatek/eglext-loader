@@ -12,11 +12,3 @@ add_library(eglextloader SHARED eglext_loader.c)
 target_include_directories(eglextloader PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 
 target_link_libraries(eglextloader PkgConfig::EGL)
-
-add_executable(test main.c)
-
-target_link_directories(test PRIVATE /usr/local/cuda/lib64)
-
-target_include_directories(test PRIVATE /usr/local/cuda/include)
-
-target_link_libraries(test eglextloader PkgConfig::PNG PkgConfig::GLES2 cudart)
